@@ -48,6 +48,30 @@ Antes de executar o script, certifique-se de ter instalado:
 
 3. O script processará os dados e gerará um novo arquivo Excel com o nome "FIPE_API_[MÊS].xlsx", onde [MÊS] é o mês atual.
 
+## Formato da Planilha de Entrada
+
+Para garantir o funcionamento correto do script, sua planilha de entrada (FIPE_API.xlsx) deve seguir o seguinte formato:
+
+| PLACA | cod fipe | ano  | tipo     |
+|-------|----------|------|----------|
+| ABC1234 | 001303-0 | 2020 | cars     |
+| XYZ5678 | 021231-7 | 2019 | trucks   |
+
+- PLACA: A placa do veículo
+- cod fipe: O código FIPE do veículo
+- ano: O ano do veículo
+- tipo: O tipo de veículo (cars, trucks, motorcycles)
+
+Certifique-se de que os nomes das colunas estejam exatamente como mostrado acima, incluindo maiúsculas e minúsculas.
+
+## Solução de Problemas
+
+Se o script apresentar erros, verifique se:
+
+1. Os nomes das colunas na sua planilha de entrada estão exatamente como especificado acima.
+2. Não há células vazias nas colunas necessárias.
+3. O arquivo da planilha está no formato .xlsx e não .xls ou outro formato.
+
 ## Contribuindo
 
 Contribuições são bem-vindas! Por favor, sinta-se à vontade para submeter pull requests ou abrir issues para sugerir melhorias ou reportar bugs.
